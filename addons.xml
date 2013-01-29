@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon  id="plugin.video.plexbmc"
+        name="PleXBMC"
+        version="3.0.5"
+        provider-name="Hippojay (plexbmc@h-jay.com)">
+  <requires>
+    <import addon="xbmc.python" version="2.0"/>
+  </requires>
+  <extension    point="xbmc.python.pluginsource"
+                library="default.py">
+        <provides>video audio image</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <minversion>1</minversion>
+    <summary lang="en">Browse and play local video, music and photo media files managed by Plex Media Server.</summary>
+    <description lang="en">Browse and play local video, music and photo media files managed by Plex Media Server.</description>
+  </extension>
+</addon>
+
+<addon  id="script.plexbmc.helper"
+        name="PleXBMC Helper"
+        version="3.0.3"
+        provider-name="Hippojay (plexbmc@h-jay.com)">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.service"
+             library="default.py" start="startup">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <minversion>1</minversion>
+    <summary lang="en">Helps PLEXBMC use Plex Remote applications.</summary>
+    <description lang="en">A helper application that allows iOS and andriod plex remotes communicate with the PleXBMC addon for XBMC.</description>
+  </extension>
+</addon>
+
+<addon id="skin.quartz3.plexbmc" version="0.7.3" name="Quartz V3 plexbmc" provider-name="hippojay (original skin by Pecinko)">
+  <requires>
+    <import addon="xbmc.gui" version="4.00"/>
+    <import addon="script.favourites" version="4.0.4"/>
+  </requires>
+  <extension
+    point="xbmc.gui.skin"
+    defaultthemename="Textures.xbt"
+    debugging="false">
+    <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
+
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Apple TV style skin</summary>
+    <description>Inspired by Apple TV interface Quartz brings easy to use, fast and flexible user interface. If you believe that sometimes less means more, you might feel right at home with Quartz. Skin graphics by Baswazz.</description>
+  </extension>
+</addon>
+
+<addon
+  id="xbmc.repo.plexbmc"
+  name="PleXBMC Add-ons for XBMC"
+  version="2.0.0"
+  provider-name="hippojay">
+  <requires>
+    <import addon="xbmc.addon" version="12.0.0"/>
+  </requires>
+  <extension point="xbmc.addon.repository"
+             name="Unofficial PlexBMC's Add-on Repository">
+    <info compressed="true">http://github.com/hippojay/repository.plexbmc.addons/raw/frodo/addons.xml</info>
+    <checksum>http://github.com/hippojay/repository.plexbmc.addons/raw/frodo/addons.xml.md5</checksum>
+    <datadir zip="true">http://github.com/hippojay/repository.plexbmc.addons/raw/frodo/download</datadir>
+    <hashes>true</hashes>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Install Add-ons from queeup's repository</summary>
+    <summary lang="tr">queeup'un deposundan eklentileri indirin</summary>
+    <description lang="en">Download and install add-ons from the unofficial queeup's addon repository.</description>
+    <disclaimer lang="en">I do not host any of the online video, audio, and photo files that some of the addons link to stored on third-party websites, nor do they upload such files themselves. They are not responsible for what other people upload to any third-party sites. Therefore we urge all copyright owners, to recognize that the links contained within these addons are located somewhere else on the web. The scraped embedded links point to the location of each video on the web. Please direct all copyright infringement issues to the companies that host these files :- Google, Dailymotion, Veoh, and so forth.</disclaimer>
+    <platform>all</platform>
+    <nofanart>true</nofanart>
+  </extension>
+</addon>
+</addons>
