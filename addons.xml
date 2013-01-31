@@ -2,7 +2,7 @@
 <addons>
 <addon  id="plugin.video.plexbmc"
         name="PleXBMC"
-        version="3.0.6"
+        version="3.0.7"
         provider-name="Hippojay (plexbmc@h-jay.com)">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -21,7 +21,7 @@
 
 <addon  id="script.plexbmc.helper"
         name="PleXBMC Helper"
-        version="3.0.3"
+        version="3.0.5"
         provider-name="Hippojay (plexbmc@h-jay.com)">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
