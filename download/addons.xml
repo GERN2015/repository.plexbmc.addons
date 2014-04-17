@@ -25,9 +25,9 @@
   </requires>
   <extension point="xbmc.addon.repository"
              name="PlexBMC Add-on Repository">
-    <info compressed="true">https://raw.githubusercontent.com/hippojay/repository.plexbmc.addons/master/addons.xml</info>
-    <checksum>https://raw.githubusercontent.com/hippojay/repository.plexbmc.addons/master/addons.xml.md5</checksum>
-    <datadir zip="true">http://github.com/hippojay/repository.plexbmc.addons/raw/master</datadir>
+    <info compressed="true">http://hippojay.github.io/repository.plexbmc.addons/download/addons.xml</info>
+    <checksum>http://hippojay.github.io/repository.plexbmc.addons/download/addons.xml.md5</checksum>
+    <datadir zip="true">http://hippojay.github.io/repository.plexbmc.addons/download</datadir>
     <hashes>true</hashes>
   </extension>
   <extension point="xbmc.addon.metadata">
