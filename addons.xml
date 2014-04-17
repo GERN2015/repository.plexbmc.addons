@@ -2,8 +2,8 @@
 <addons>
 <addon  id="plugin.video.plexbmc"
         name="PleXBMC"
-        version="3.0.7"
-        provider-name="Hippojay (plexbmc@h-jay.com)">
+        version="3.4.5"
+        provider-name="Hippojay, Magnesium, Wickning1">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -22,7 +22,7 @@
 <addon  id="script.plexbmc.helper"
         name="PleXBMC Helper"
         version="3.0.5"
-        provider-name="Hippojay (plexbmc@h-jay.com)">
+        provider-name="Hippojay, Wickning1">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -32,43 +32,24 @@
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <minversion>1</minversion>
-    <summary lang="en">Helps PLEXBMC use Plex Remote applications.</summary>
+    <summary lang="en">Helps PleXBMC use Plex Remote applications.</summary>
     <description lang="en">A helper application that allows iOS and andriod plex remotes communicate with the PleXBMC addon for XBMC.</description>
   </extension>
 </addon>
 
-<addon id="skin.quartz3.plexbmc" version="0.7.4" name="Quartz V3 plexbmc" provider-name="hippojay (original skin by Pecinko)">
-  <requires>
-    <import addon="xbmc.gui" version="4.0.0"/>
-    <import addon="script.favourites" version="4.0.4"/>
-  </requires>
-  <extension
-    point="xbmc.gui.skin"
-    defaultthemename="Textures.xbt"
-    debugging="false">
-    <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
-
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary>Apple TV style skin</summary>
-    <description>Inspired by Apple TV interface Quartz brings easy to use, fast and flexible user interface. If you believe that sometimes less means more, you might feel right at home with Quartz. Skin graphics by Baswazz.</description>
-  </extension>
-</addon>
-
 <addon
-  id="xbmc.repo.plexbmc"
+  id="repository.plexbmc.addons"
   name="PleXBMC Add-ons for XBMC"
   version="2.0.2"
-  provider-name="hippojay">
+  provider-name="hippojay, magnesium, wickning1">
   <requires>
-    <import addon="xbmc.addon" version="12.0.0"/>
+    <import addon="xbmc.addon" version="13.0.0"/>
   </requires>
   <extension point="xbmc.addon.repository"
              name="PlexBMC Add-on Repository">
-    <info compressed="true">http://repository-plexbmc-addons.googlecode.com/git-history/frodo/addons.xml</info>
-    <checksum>http://repository-plexbmc-addons.googlecode.com/git-history/frodo/addons.xml.md5</checksum>
-    <datadir zip="true">http://repository-plexbmc-addons.googlecode.com/git-history/frodo/download</datadir>
+    <info compressed="true">https://raw.githubusercontent.com/austin1howard/repository.plexbmc.addons/frodo/addons.xml</info>
+    <checksum>https://raw.githubusercontent.com/austin1howard/repository.plexbmc.addons/frodo/addons.xml.md5</checksum>
+    <datadir zip="true">https://github.com/austin1howard/repository.plexbmc.addons/blob/frodo/download</datadir>
     <hashes>true</hashes>
   </extension>
   <extension point="xbmc.addon.metadata">
